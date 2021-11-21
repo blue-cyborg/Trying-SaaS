@@ -1,0 +1,42 @@
+body {
+  background: #d4ed9d;
+}
+
+h1,
+h2 {
+  text-align: center;
+  background: seagreen;
+  color: yellow;
+  border: 3px solid yellow;
+  padding: 20px;
+  font-weight: 700;
+  border-radius: 60px;
+}
+
+.bottom-list {
+  background: seagreen;
+  color: yellow;
+  border: 3px solid yellow;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-fluid {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid coral;
+  border-radius: 20px;
+}
+
+.container {
+  border: 6px solid salmon;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
