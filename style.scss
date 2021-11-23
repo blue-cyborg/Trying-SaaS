@@ -1,45 +1,82 @@
+$headerColor: seagreen;
+$secondaryHc: yellow;
+$borderColor: salmon;
+$headerFont: "Righteous", cursive;
+$paragraphFont: "Roboto", sans-serif;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@mixin centerImage {
+  display: block;
+  margin: 0 auto;
+}
+
 body {
   background: #d4ed9d;
 }
 
 h1,
 h2 {
-  text-align: center;
-  background: seagreen;
-  color: yellow;
-  border: 3px solid yellow;
+  @include flexCenter();
+
+  background: $headerColor;
+  color: $secondaryHc;
+  border: 3px solid $secondaryHc;
   padding: 20px;
   font-weight: 700;
   border-radius: 60px;
+  font-family: $headerFont;
 }
 
-.message {
-  text-align: center;
-  margin: 0;
+p {
+  font-family: $paragraphFont;
+}
+
+footer {
+  .message {
+    background: $secondaryHc;
+    border: 2px solid $headerColor;
+    border-radius: 20px;
+    font-family: $headerFont;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
 }
 
 .bottom-list {
-  background: seagreen;
-  color: yellow;
-  border: 3px solid yellow;
-  border-radius: 20px;
-  text-align: center;
+  @include flexCenter();
+
+  background: $headerColor;
+  color: $secondaryHc;
+  border: 3px solid $secondaryHc;
+  border-radius: 30px;
+  a {
+    color: $borderColor;
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .logo {
-  display: block;
-  margin: 0 auto;
+  @include centerImage();
 }
 
 .img-fluid {
-  display: block;
-  margin: 0 auto;
-  border: 3px solid coral;
+  @include centerImage();
+
+  border: 3px solid $borderColor;
   border-radius: 20px;
 }
 
 .container {
-  border: 6px solid salmon;
+  border: 6px solid $borderColor;
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 10px;

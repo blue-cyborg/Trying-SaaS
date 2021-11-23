@@ -4,26 +4,62 @@ body {
 
 h1,
 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: seagreen;
   color: yellow;
   border: 3px solid yellow;
   padding: 20px;
   font-weight: 700;
   border-radius: 60px;
+  font-family: "Righteous", cursive;
 }
 
-.message {
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+footer .message {
+  background: yellow;
+  border: 2px solid seagreen;
+  border-radius: 20px;
+  font-family: "Righteous", cursive;
   text-align: center;
   margin: 0;
+  padding: 20px;
 }
 
 .bottom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: seagreen;
   color: yellow;
   border: 3px solid yellow;
-  border-radius: 20px;
-  text-align: center;
+  border-radius: 30px;
+}
+
+.bottom-list a {
+  color: salmon;
+}
+
+.bottom-list a:hover {
+  color: white;
 }
 
 .logo {
@@ -34,7 +70,7 @@ h2 {
 .img-fluid {
   display: block;
   margin: 0 auto;
-  border: 3px solid coral;
+  border: 3px solid salmon;
   border-radius: 20px;
 }
 
