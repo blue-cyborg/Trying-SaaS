@@ -39,7 +39,7 @@ footer .message {
 
 .bottom-list {
   text-align: center;
-  list-style: none;
+  list-style-type: none;
   background: seagreen;
   color: yellow;
   border: 3px solid yellow;
