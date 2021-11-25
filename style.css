@@ -39,11 +39,14 @@ footer .message {
 
 .bottom-list {
   text-align: center;
-  list-style-type: none;
   background: seagreen;
   color: yellow;
   border: 3px solid yellow;
   border-radius: 30px;
+}
+
+.bottom-list li {
+  list-style-type: none;
 }
 
 .bottom-list a {
